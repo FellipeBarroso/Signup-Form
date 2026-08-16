@@ -1,0 +1,169 @@
+/* Estilização */
+
+/* Fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap'); /* Outfit */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); /* Inter */
+
+/* Váriaveis */
+
+:root {
+    /* Cores */
+    --color-primary: #EF6340;
+    --color-title: #C04E31;
+    --color-dark: #2A0F0F;
+    --color-paragraph: #64748B;
+    --color-inputs: #F8FAFC;
+    --color-border: #E2E8F0;
+    --color-card: #FFFFFF;
+
+    /* Fontes */
+    --font-primary: "Inter";
+    --font-title: "Outfit";
+}
+
+/* Estilizações Globais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary), Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(180deg, #FFF8E4, #FFD2D2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* Estilização */
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 88px;
+}
+
+/* Card */
+
+.card {
+    background-color: var(--color-card);
+    max-width: 22.5rem;
+    height: 100vh;
+    max-height: 34.8125rem;
+    margin-top: 14px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.082);
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 38px 20px;
+    gap: 8px;
+}
+
+/* Card Content */
+
+.signup-title {
+    color: var(--color-title);
+    font-size: 2.1rem;
+    font-weight: bolder;
+}
+
+.signup-subtitle {
+    color: var(--color-paragraph);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.form-signup {
+    display: flex;
+    flex-direction: column;
+    max-width: 21rem;
+}
+
+/* Cadastro */
+
+.field {
+    padding: 6px 30px;
+}
+
+.field-label {
+    color: var(--color-dark);
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.field-control {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-inputs);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    border-radius: 0.75rem;
+    padding: 0.45rem 1rem;
+    gap: 0.75rem;
+}
+
+.field-control svg {
+    flex-shrink: 0;
+    color: var(--color-paragraph);
+}
+
+.field-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Botão */
+
+.btn-primary {
+    align-self: center;
+    padding: 17px 79px;
+    border: none;
+    color: var(--color-card);
+    background-color: var(--color-primary);
+    border-radius: 14px;
+    margin-top: 18px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.082);
+}
+
+/* Mensagem */
+
+.form-disclaimer {
+    margin-top: 6px;
+    font-size: 0.7rem;
+    color: var(--color-paragraph);
+    text-align: center;
+}
+
+/* Opção de Login */
+
+.login {
+    margin-top: 24px;
+    color: var(--color-paragraph);
+}
+
+.login a {
+    color: var(--color-primary);
+    font-weight: 600;
+    text-underline-offset: 2px;
+}
