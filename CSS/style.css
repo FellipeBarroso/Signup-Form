@@ -194,3 +194,9 @@ body {
     transform: scale(102%);
     background-color: #e05b39
 }
+
+/* Desktop */
+
+.marketing-panel {
+    display: none;
+}
