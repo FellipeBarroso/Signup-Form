@@ -46,6 +46,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .logo {
@@ -89,7 +90,7 @@ body {
 .form-signup {
     display: flex;
     flex-direction: column;
-    max-width: 21rem;
+    max-width: 100%;
 }
 
 /* Cadastro */
